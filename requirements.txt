@@ -1,0 +1,2 @@
+eth-hash[pycryptodome]>=0.5.2
+eth-utils>=2.2.0
