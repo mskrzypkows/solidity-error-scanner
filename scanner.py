@@ -47,8 +47,7 @@ def scan_directory(directory):
                 if results:
                     print(f"\nIn file: {file_path}")
                     for error_name, error_code, params in results:
-                        print(f"Error: {error_name}({params})")
-                        print(f"Code: {error_code}")
+                        print(f"{error_code} -> {error_name}({params})")
 
 def main():
     parser = argparse.ArgumentParser(description='Scan Solidity files for error declarations and generate error codes.')
