@@ -19,8 +19,7 @@ def scan_file(file_path):
         with open(file_path, 'r', encoding='utf-8') as f:
             content = f.read()
 
-        # Updated pattern to match error declarations with optional parameters
-        pattern = r'error\s+([A-Z_][A-Z0-9_]*)\s*\(([\w\s,]*)\)\s*;'
+        pattern = r'error\s+([A-Za-z_][A-Za-z0-9_]*)\s*\((.*?)\)\s*;'
 
         matches = re.finditer(pattern, content)
         results = []
